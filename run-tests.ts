@@ -1,12 +1,6 @@
 import { TestSet, TestRunner } from "alsatian";
 import { configure } from "enzyme";
 import * as Adapter from "enzyme-adapter-react-16";
-import { register } from "tsconfig-paths";
-
-// Convert path aliases (e.g. @common/*) to relative paths
-const { compilerOptions } = require("./tsconfig.json");
-const { baseUrl, paths } = compilerOptions;
-register({ baseUrl, paths });
 
 // Configure Enzyme for React 16
 configure({ adapter: new Adapter() });

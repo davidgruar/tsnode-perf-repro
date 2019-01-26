@@ -12,12 +12,7 @@
       "noUnusedLocals": true,
       "experimentalDecorators": true,
       "typeRoots": [
-        "./node_modules/@types/",
-        "./types/"
-      ],
-      "baseUrl": "./",
-      "paths": {
-        "@common/*": ["./src/App.Common/src/*"]
-      }
+        "./node_modules/@types/"
+      ]
     }
 }
